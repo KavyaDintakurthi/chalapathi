@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<button onclick="kavya()" > Click me</button>
+<p id="kavya">R u waiting for chandu?</p>
+</body>
+<script>
+	function kavya()
+	{
+		var c;
+		if(confirm('Tell me ur answer'))
+		{
+			c="Am waiting for chandu";
+		}
+		else
+		{
+			c="No dear,Am always solo";
+		}
+		document.getElementById('kavya').innerHTML=c;
+	}
+</script>
+</html>

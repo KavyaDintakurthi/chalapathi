@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="number" id="num" value="">
+	<button onclick="kavya()">Show me</button>
+</body>
+<script>
+	function kavya()
+	{
+		var k=document.getElementById('num').value;
+		if(k==21)
+		{
+			document.write("Lemons are sufficient");
+		}
+		else if(k>21)
+		{
+			var c=k-21;
+			document.write(c+"more lemons are available extra")
+		}
+		else if(k<=0)
+		{
+			document.write("Enter valid number");
+		}
+		else
+		{
+			var s=21-k;
+			document.write(s+"more lemons are needed");
+		}
+	}
+</script>
+</html>
